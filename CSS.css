@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    
+    
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    background: rgb(40, 42, 38);
+    margin: 0;
+    padding: 0;
+}
+
+
+canvas {
+     display: block;
+     margin: 0 auto;
+     margin-top: 100px;
+     
+}
