@@ -1,19 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-    
-    
-    text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     background: rgb(40, 42, 38);
     margin: 0;
     padding: 0;
 }
 
+.calculator {
+    margin-top: 60px;
+width: 600px;
+border: solid 2px rgb(95, 95, 95);
+border-radius: 10px;
+background-color: rgb(57, 57, 57);
+padding: 20px;
 
-canvas {
-     display: block;
-     margin: 0 auto;
-     margin-top: 100px;
-     
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 80px;
+gap: 20px;
+}
+
+
+.calculator-result {
+    grid-column: 1 / -1;
+    font-size: 58px;
+    padding: 3px;
+    border-radius: 2px;
+    color: white;
+    font-weight: 400;
+   border: solid 5px rgba(0, 0, 0, 0.187);
+    background-color: rgb(45, 45, 45);
+}
+
+.calculator-btn {
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgb(168, 168, 168);
+    box-shadow: 1px 7px 6px rgb(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+}
+.calculator-btn:active {
+
+    border: solid 5px rgb(57, 57, 57);
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.298);
+ 
+}
+.calculator-btn-operator {
+background-color:  rgb(170, 152, 137);
+}
+.calculator-btn-reset {
+   
+    background-color: rgb(171, 122, 122);
+}
+.calculator-btn-equal {
+    grid-column: 2 / -1;
+    background-color: rgb(143, 168, 147);
 }
