@@ -1,43 +1,29 @@
 body {
-    width: 1366px;
-    background: rgb(66, 63, 57);
-    margin: 0 auto; 
-    padding: 0;
-    overflow:hidden;
+   background: rgb(236, 232, 232);
 }
-.slider {
-    padding-top: 100px;
+header {
+    padding-bottom: 30px;
+}
+footer {
+    padding: 20px;
+}
+.list-card {
+    margin-top: 20px;
     display: flex;
+}
+.card {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.286);
+}
+.sliders {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.286);
+    margin-top: 20px;
+    margin-left: 180px;
+    transition: all 0.5s;
+    width: 600px;
+
+}
+.badge {
     position: relative;
-    width: 2000px;
-    transition: all 0.8s ease;
-}
-.cell {
-
-    border: 2px solid black;
-
-    width: 400px;
-    height: 150px;
-    margin-right: 50px;
-    transition: all 1s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-   
-}
-.but-next,
-.but-prev {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: white;
-    width: 50px;
-    margin-top: 10px;
-    margin-right: 20px;
-    border-radius: 50%;
-    height: 50px;
-    font-size: 40px;
-    border: 2px solid black;
+    top: -10px;
+    left: 10px;
 }
